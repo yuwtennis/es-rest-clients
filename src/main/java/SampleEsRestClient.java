@@ -67,6 +67,10 @@ public class SampleEsRestClient {
     }
 
     // Initialize SSLContext
+    // TODO
+    // 2020.03.29
+    // At this moment I was not able to work it out using TrustSelfSignedStrategy.
+    // It fails with "General SSLEngine problem". So, I simply allowed all certificates.
     private static SSLContext initSSLContextAsTrustAll() {
         SSLContext sslContext = null;
 
